@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from'react-router-dom';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/Navbar';
@@ -8,7 +10,10 @@ import Productlist from './components/Productlist';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal';
-;
+import { dom } from '@fortawesome/fontawesome-svg-core'
+
+dom.watch()
+
 
 
 

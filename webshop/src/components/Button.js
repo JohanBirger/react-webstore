@@ -1,4 +1,9 @@
 import styled from'styled-components';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { dom } from '@fortawesome/fontawesome-svg-core'
+
+dom.watch()
 
 export const ButtonContainer = styled.button`
 text-transform:capitalize;

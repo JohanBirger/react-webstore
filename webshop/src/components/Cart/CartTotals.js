@@ -1,5 +1,8 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import { dom } from '@fortawesome/fontawesome-svg-core'
+
+dom.watch()
 
 export default function CartTotals({value}) {
     const{cartSubTotal,cartTax,cartTotal,clearCart} =value;

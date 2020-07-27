@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
 import {ProductConsumer} from '../context'
 import {Link} from 'react-router-dom';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {ButtonContainer} from './Button';
 import styled from'styled-components';
+import { dom } from '@fortawesome/fontawesome-svg-core'
+
+dom.watch()
 
 
 export default class Details extends Component {

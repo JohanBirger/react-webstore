@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from'react-router-dom';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {ProductProvider} from './context';
 import * as serviceWorker from './serviceWorker';
+import { dom } from '@fortawesome/fontawesome-svg-core'
+
+dom.watch()
 /*React Router*/
 ReactDOM.render(
   <ProductProvider>

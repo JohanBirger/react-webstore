@@ -1,4 +1,7 @@
 import React from 'react'
+import { dom } from '@fortawesome/fontawesome-svg-core'
+
+dom.watch()
 
 export default function EmptyCart() {
     return (
