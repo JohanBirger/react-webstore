@@ -1,0 +1,57 @@
+:root{
+  --Chartreuse:#7FFF00;
+  --mainDark:#232528;
+  --mainWhite:#f3f3f3;
+  --mainBlack:#000000;
+  --mainYellow:#ffa400;
+  --secDark:#333;
+  
+}
+
+body{
+  font-family:'Fira Code', monospace !important;
+  background:var(--mainWhite) !important;
+  color: var(--mainBlack) !important;
+
+}
+
+.textTitle {
+  
+  font-family:'Fira Code', monospace !important;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.textWhite{
+  color: var(--mainWhite);
+}
+.textChartreuse{
+  color: var(--Chartreuse);
+}
+.textMainBlack{
+  color: var(--mainBlack);
+}
+
+li {
+  color: transparent !important;
+}
+
+.btn-black{
+  background:transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainBlack);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainBlack) !important;
+}
+
+.btn-black:hover{
+  background: var(--mainBlack) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var var(--mainYellow);
+}
