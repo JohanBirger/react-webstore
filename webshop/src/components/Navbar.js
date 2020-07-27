@@ -43,7 +43,7 @@ export default class Navbar extends Component {
 const NavWrapper = styled.nav`
 background: transparent;
 .nav-link{
-    color:var(--mainBlack) !important;
+    color:var(--secDark) !important;
     font-size:1rem;
     text-transform: Capitalize;
 }
