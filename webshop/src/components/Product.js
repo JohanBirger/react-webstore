@@ -40,7 +40,7 @@ export default class Product extends Component {
 
                     {/*card footer */}
                     <div className="card-footer d-flex justify-content-between">
-                        <p className="textMainBlack align-self-center mb-0">
+                        <p className="textMainBlack align-self-center mb-0 py-2">
                             {title}
                         </p>
                         <h5 className="textMainBlack font-bold mb-0">
