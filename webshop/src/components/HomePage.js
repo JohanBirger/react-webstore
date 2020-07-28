@@ -15,8 +15,8 @@ export default class Productlist extends Component {
             <React.Fragment>
                 <div className="bgBlack">
                     <div className="container">
-                        <h2 className="textSnow">
-                           Only the latest!
+                        <h2 className="col-10 textSnow text-center">
+                           Latest and greatest!
                         </h2>
 
                         <div className="row">
