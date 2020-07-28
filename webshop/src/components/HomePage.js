@@ -17,7 +17,7 @@ export default function HomePage() {
     <div className="row">
           <div className="col-10 mx-auto text center text-slanted textMainBlack my-5">
             <h1>
-                Home Page
+                Feed
             </h1>
         </div>
     </div>
