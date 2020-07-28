@@ -18,6 +18,11 @@ export default function HomePage() {
                             {/* product info */}
     <div className="row">
                                 {/* Product img*/}
+
+        <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
+              <img src={img} className="img-fluid" alt="product"/>
+        </div>
+
        
                                 {/* Product text*/}
         <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
