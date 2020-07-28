@@ -13,9 +13,9 @@ export default class Productlist extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="py-5">
+                <div className="bgBlack">
                     <div className="container">
-                        <Title name="Have a look at our" title="feed"/>
+                        <Title name="What's" title="New!"/>
 
                         <div className="row">
                             <ProductConsumer>
