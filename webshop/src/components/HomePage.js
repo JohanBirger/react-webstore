@@ -14,15 +14,15 @@ export default class Productlist extends Component {
         return (
             <React.Fragment>
                 <div className="bgBlack">
-                    <div className="container">
-                       <div className="col-10 mx-auto my-2 text-center textTitle">
+                    <div className="container bgBlack">
+                     {/*  <div className="col-10 mx-auto my-2 text-center textTitle">
                                    <h1 className="text-capitalize font-weight-bold textSnow">
                     The <strong className="textSnow">latest!
                     </strong>
                 </h1>
-                        </div>
+                        </div> */}
 
-                        <div className="row">
+                        <div className="row bgBlack">
                             <ProductConsumer>
                                 {value =>{
                                     return value.products.map(product=>{
