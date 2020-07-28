@@ -8,6 +8,9 @@ import PropTypes from 'prop-types'
 
 export default function HomePage() {
     return (
+
+        const {id, title, img, price, inCart} = this.props.product
+
         <div>
                     <div className="container py-5">
                             {/* title */}
