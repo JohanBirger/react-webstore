@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 import code from '../code.svg'
 import styled from 'styled-components';
-import {ButtonContainer} from "./Button";
+import {Button} from "./Button";
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
 dom.watch()
@@ -13,30 +13,27 @@ export default class Navbar extends Component {
     render() {
         return (
             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-                {/* 
-                    https://www.iconfinder.com/icons/1243689/call_phone_icon
-                    Creative Commons (Attribution 3.0 Unported);
-                    https://www.iconfinder.com/Makoto_msk */}
+               
                 <Link to='/'>
                     <img src={code} style={{ height: 40, width:50}} alt="store" className="navbar-brand"/>
 
                 </Link>
-                <ul className="navbar-nav.align-items-center">
-                    <li className="nav-item ml-5 ">
-                        <Link to ="/" className="nav-link">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link to ="/products" className="nav-link">
                         Products
                         </Link>
                     </li>
                 </ul>
                 <Link to='/cart' className="ml-auto ">
-                    <ButtonContainer>
+                    <button>
                         <span className="mr-1">
                         <i className="fa fa-cart-plus" />
                         </span>
                         
                         Cart
 
-                    </ButtonContainer>
+                    </button>
                 </Link>
             </NavWrapper>
         )
@@ -44,12 +41,10 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-background: transparent;
+background: var(--mainDark);
 .nav-link{
-    color:var(--secDark) !important;
+    color:var(--snowWhite) !important;
     font-size:1rem;
     text-transform: Capitalize;
 }
 `
-
-

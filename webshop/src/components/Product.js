@@ -95,7 +95,7 @@ const ProductWrapper = styled.div`
     transition: all 0.4s linear;
 }
 img-container:hover .card-img-top{
-    transform: scale(5);
+    transform: scale(1);
 }
 .cart-btn {
     position:absolute;
@@ -106,13 +106,13 @@ img-container:hover .card-img-top{
     font-size:1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform:translate(100%,100%);
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
 .img-container:hover .cart-btn{
     transform: translate(0,0);
 }
 .cart-btn:hover {
-    color: rgba(46, 49, 49, 1);
+    color: var(--snowWhite);
     cursor: pointer;
 }
 `

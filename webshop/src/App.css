@@ -5,6 +5,7 @@
   --mainBlack:#000000;
   --mainYellow:#ffa400;
   --secDark:#333;
+  --snowWhite: #FFFAFA;
   
 }
 
@@ -21,6 +22,11 @@ body{
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
+
+.textSnow{
+  color: var(--snowWhite);
+}
+
 
 .textWhite{
   color: var(--mainWhite);
@@ -54,4 +60,13 @@ li {
   cursor: pointer;
   font-size: 1.2rem;
   color: var var(--mainYellow);
+}
+
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  display:inline-block;
+  float: none;
 }

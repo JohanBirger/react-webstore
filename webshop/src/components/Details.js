@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {ProductConsumer} from '../context'
 import {Link} from 'react-router-dom';
-import {ButtonContainer} from './Button';
+import {Button} from './Button';
 import styled from'styled-components';
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
@@ -47,19 +47,19 @@ export default class Details extends Component {
                                     {/*buttons*/}
                                     <div>
                                         <Link to='/'>
-                                            <ButtonContainer>
+                                            <Button>
                                                 back to products
-                                            </ButtonContainer>
+                                            </Button>
                                             
                                         </Link>
-                                        <ButtonContainer cart disabled={inCart ? true : false}
+                                        <Button cart disabled={inCart ? true : false}
                                         onClick={()=>{
                                             value.addToCart(id);
                                             value.openModal(id);
                                         }}>
                                             {inCart ? "inCart" : "add to cart"}
 
-                                        </ButtonContainer>
+                                        </Button>
 
                                     </div>
                                 </div>

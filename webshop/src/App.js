@@ -9,6 +9,7 @@ import Cart from './components/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal';
 import { dom } from '@fortawesome/fontawesome-svg-core'
+import HomePage from './components/HomePage';
 
 dom.watch()
 
@@ -24,9 +25,10 @@ function App() {
       <React.Fragment>
         <Navbar/>
         <Switch>
-          <Route exact path="/" component={Productlist}/>
+          <Route exact path="/" component={HomePage}/>
           <Route exact path="/details" component={Details}/>
           <Route exact path="/cart" component={Cart}/>
+          <Route exact path="/products" component={Productlist}/>
           <Route  component={Default} />
         </Switch> 
         <Modal/>

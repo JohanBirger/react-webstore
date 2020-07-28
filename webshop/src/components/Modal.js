@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {ProductConsumer} from '../context';
-import {ButtonContainer} from'./Button';
+import {Button} from'./Button';
 import {Link} from "react-router-dom";
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
@@ -30,14 +30,14 @@ export default class Modal extends Component {
                                         <h5 className="text-muted">price: {price} SEK
                                         </h5>
                                         <Link to ='/'>
-                                            <ButtonContainer onClick={()=>closeModal()}>
+                                            <Button onClick={()=>closeModal()}>
                                                 continue shopping
-                                            </ButtonContainer>
+                                            </Button>
                                         </Link>
                                         <Link to ='/cart'>
-                                            <ButtonContainer onClick={()=>closeModal()}>
+                                            <Button onClick={()=>closeModal()}>
                                                 go to cart
-                                            </ButtonContainer>
+                                            </Button>
                                         </Link>
                                         
                                         
@@ -72,6 +72,8 @@ display:flex;
 align-items: center;
 justify-content:center;
 #modal{
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 3rem;
     background: var(--mainWhite);
 }
 
