@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import {Button} from './Button';
+import styled from 'styled-components'
 
 export default function HomePage() {
     return (
