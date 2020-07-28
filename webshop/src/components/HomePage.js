@@ -15,9 +15,9 @@ export default class Productlist extends Component {
             <React.Fragment>
                 <div className="bgBlack">
                     <div className="container">
-                        <h2 className="col-10 textSnow text-center">
+                       <div className="col-10 mx-auto my-2 text-center textTitle">
                            Latest and greatest!
-                        </h2>
+                        </div>
 
                         <div className="row">
                             <ProductConsumer>
