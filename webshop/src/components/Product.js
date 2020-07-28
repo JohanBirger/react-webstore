@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import {ProductConsumer} from '../context'
 import PropTypes from 'prop-types'
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
 dom.watch()
@@ -34,7 +32,7 @@ export default class Product extends Component {
                         }}
                         >
                         {inCart ? (<p className="text-capitalize mb-0" disabled>
-                            in Cart</p>):(<i className="fas fa-cart-plus"/>)}
+                            in Cart</p>):(<i className="fa fa-cart-plus"/>)}
                             </button>
                     </div>)}
                    

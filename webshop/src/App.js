@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Switch, Route } from'react-router-dom';
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/Navbar';
