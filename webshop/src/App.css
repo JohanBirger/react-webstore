@@ -28,7 +28,7 @@ body{
 }
 
 .bgBlack{
-  background: var(--secDark);
+  background: var(--mainDark);
 }
 
 .textWhite{
