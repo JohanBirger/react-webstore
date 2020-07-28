@@ -27,6 +27,9 @@ body{
   color: var(--snowWhite);
 }
 
+.bgBlack{
+  background: var(--secDark);
+}
 
 .textWhite{
   color: var(--mainWhite);
