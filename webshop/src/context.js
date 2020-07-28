@@ -149,16 +149,18 @@ class ProductProvider extends Component {
         });
     };
 
+
     addTotals = () => {
+        let givenDiscount= 0.2
         let subTotal =0;
         this.state.cart.map(item=>(subTotal +=item.total));
-        const tempTax =subTotal * 0.32;
-        const tax = parseFloat(tempTax.toFixed(2));
-        const total = subTotal + tax;
+        const tempDiscount =subTotal * givenDiscount;
+        const Discount = parseFloat(tempDiscount.toFixed(2));
+        const total = subTotal - Discount;
         this.setState(()=>{
             return{
                 cartSubTotal: subTotal,
-                cartTax: tax,
+                cartTax: Discount,
                 cartTotal: total
             };
         })
