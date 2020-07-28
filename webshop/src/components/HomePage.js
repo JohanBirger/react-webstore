@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {Button} from './Button';
 import styled from 'styled-components'
 import {ProductWrapper} from './Product';
-import {*} from '../Context.js';
+import {*} from '../context.js';
 
 export default function HomePage() {
     return (
