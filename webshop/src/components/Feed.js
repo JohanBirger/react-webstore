@@ -17,7 +17,7 @@ export default class Product extends Component {
                 <div className="card">
                     <ProductConsumer>
                         {(value)=>( 
-                        <div className="img-container p-1" 
+                        <div className="img-container" 
                         onClick={()=>
                             value.handleDetail(id)
                         }>
