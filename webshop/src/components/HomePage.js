@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Product from './Product';
+import Product from './Feed';
 import Title from './Title';
 import {ProductConsumer} from '../context';
 import { dom } from '@fortawesome/fontawesome-svg-core'
