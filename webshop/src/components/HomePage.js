@@ -3,9 +3,6 @@ import {Link} from 'react-router-dom';
 import {Button} from './Button';
 import styled from 'styled-components'
 import {ProductWrapper} from './Product';
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import {Link} from 'react-router-dom'
 import {ProductConsumer} from '../context'
 import PropTypes from 'prop-types'
 
