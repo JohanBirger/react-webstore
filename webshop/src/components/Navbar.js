@@ -48,9 +48,25 @@ background: var(--mainDark);
 }
 `
 const Button = styled.button`
-background: var(--mainDark);
-color:var(--snowWhite) !important;
+text-transform:capitalize;
 font-size:1rem;
-
+background: transparent;
+border: 0.1rem solid transparent;
+color:var(--snowWhite);
+padding:0.2rem 0.5rem;
+cursor:pointer;
+margin:0.2rem 0.5rem 0.2rem 0;
+transition:all 0.35s ease-in-out;
+&:hover{
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    border: 0.1rem solid var(--mainBlack);
+    border-color:var(--mainBlack);
+    border-radius:0.1rem;
 }
-`
+&:focus{
+    outline:none;
+}
+`;
+
+
