@@ -48,3 +48,10 @@ background: var(--mainDark);
     text-transform: Capitalize;
 }
 `
+const Button = styled.button`
+background: var(--mainDark);
+color:var(--snowWhite) !important;
+font-size:1rem;
+
+}
+`
