@@ -17,12 +17,12 @@ export default class Product extends Component {
                 <div className="card">
                     <ProductConsumer>
                         {(value)=>( 
-                        <div className="img-container" 
+                        <div className="img-container col-12" 
                         onClick={()=>
                             value.handleDetail(id)
                         }>
                         <Link to="/details">
-                            <img src={img} alt="product" className="card-img-top"
+                            <img src={img} alt="product" className="card-img-top col-12"
                             />
                         </Link>
                       
