@@ -22,7 +22,7 @@ export default class Productlist extends Component {
                 </h1>
                         </div> */}
 
-                        <div className="row bgBlack">
+                        
                             <ProductConsumer>
                                 {value =>{
                                     return value.products.map(product=>{
@@ -31,7 +31,7 @@ export default class Productlist extends Component {
 
                                 }}
                             </ProductConsumer>
-                        </div>
+                        
                     </div>
                 </div>
             </React.Fragment>
