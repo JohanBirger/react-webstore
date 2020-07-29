@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 import code from '../code.svg'
 import styled from 'styled-components';
-import {Button} from "./Button";
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
 dom.watch()
@@ -26,14 +25,14 @@ export default class Navbar extends Component {
                     </li>
                 </ul>
                 <Link to='/cart' className="ml-auto ">
-                    <button>
+                    <Button>
                         <span className="mr-1">
                         <i className="fa fa-cart-plus" />
                         </span>
                         
                         Cart
 
-                    </button>
+                    </Button>
                 </Link>
             </NavWrapper>
         )
