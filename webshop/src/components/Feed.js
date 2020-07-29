@@ -53,6 +53,7 @@ export const ProductWrapper = styled.div`
 .card{
     border-color:transparent;
     transition:all 1s exponential;
+    border-radius:0rem 0rem 0rem 0rem;
 }
 .card-footer{
     background: transparent;
