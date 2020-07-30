@@ -57,12 +57,13 @@ padding:0.2rem 0.5rem;
 cursor:pointer;
 margin:0.2rem 0.5rem 0.2rem 0;
 transition:all 0.35s ease-in-out;
+border-radius: 1rem;
 &:hover{
     background: var(--snowWhite);
     color: var(--mainBlack);
     border: 0.1rem solid var(--mainBlack);
     border-color: transparent;
-    border-radius:0rem;
+    border-radius:1rem;
 }
 &:focus{
     outline:none;

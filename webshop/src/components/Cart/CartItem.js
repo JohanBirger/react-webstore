@@ -27,9 +27,9 @@ export default function CartItem({item,value}) {
             <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
                 <div className="d-flex justify-content-center">
                     <div>
-                        <span className="btn btn-black mx-1" onClick={()=>decrement(id)}>-</span>
-                        <span className="btn btn-black mx-1">{count}</span>
-                        <span className="btn btn-black mx-1" onClick={()=>increment(id)}>+</span>
+                        <span className="btn btn-black mx-0.5" onClick={()=>decrement(id)}><i class="fa fa-minus"></i></span>
+                        <span className="btn  mx-0.5">{count}</span>
+                        <span className="btn btn-black mx-0.5" onClick={()=>increment(id)}><i class="fa fa-plus"></i></span>
                     </div>
                 </div>
             </div>

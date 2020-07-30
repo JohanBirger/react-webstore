@@ -10,11 +10,13 @@ import { dom } from '@fortawesome/fontawesome-svg-core'
 dom.watch()
 /*React Router*/
 ReactDOM.render(
+  <feedProvider>
   <ProductProvider>
     <Router>
     <App />
   </Router>
-  </ProductProvider>,
+  </ProductProvider>
+  </feedProvider>,
   document.getElementById('root')
 );
 

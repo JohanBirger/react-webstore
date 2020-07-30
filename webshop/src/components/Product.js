@@ -44,8 +44,8 @@ export default class Product extends Component {
                             {title}
                         </p>
                         <h5 className="textMainBlack font-bold mb-0">
-                            <span className="mr-1">SEK</span>
-                            {price}
+                            <span className="mr-1">{price}</span>
+                            SEK
                         </h5>
 
                     </div>
@@ -83,7 +83,7 @@ export const ProductWrapper = styled.div`
     box-shadow:2px 2px 5px 0px rgba(0,0,0,0.2);
  }
   .card-footer{
-    background: var(--mainWhite);
+    background: transparent;
 
  }
 }
@@ -106,7 +106,7 @@ img-container:hover .card-img-top{
     color: var(--snowWhite);
     font-size:1.2rem;
     border-color:transparent;
-    border-radius: 0.4rem 0 0 0;
+    border-radius: 0.3rem 0rem 0 0.3rem;
     transform:translate(0,0);
     transition: all 0.15s linear;
 }
