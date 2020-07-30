@@ -17,10 +17,10 @@ export default class Productlist extends Component {
                     <div className="container-fluid bgBlack">
                      {/*  <div className="col-10 mx-auto my-2 text-center textTitle">
                                    <h1 className="text-capitalize font-weight-bold textSnow">
-                    The <strong className="textSnow">latest!
-                    </strong>
-                </h1>
-                        </div> */}
+                                        The <strong className="textSnow">latest!
+                                        </strong>
+                                    </h1>
+                            </div> */}
 
                         <div className="row bgBlack">
                             <ProductConsumer>

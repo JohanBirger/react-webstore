@@ -6,6 +6,9 @@
   --mainYellow:#ffa400;
   --secDark:#333;
   --snowWhite: #FFFAFA;
+  --spaceGrey: #4f5b66;
+  --appleBlue:#0077ED;
+  
   
 }
 
@@ -18,7 +21,7 @@ body{
 
 .textTitle {
   
-  font-family:'Fira Code', monospace !important;
+  font-family:'Roboto Slab', monospace !important;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }

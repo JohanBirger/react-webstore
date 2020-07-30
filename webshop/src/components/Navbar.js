@@ -27,7 +27,7 @@ export default class Navbar extends Component {
                 <Link to='/cart' className="ml-auto ">
                     <Button>
                         <span className="mr-1">
-                        <i className="fa fa-cart-plus" />
+                        <i className="fa fa-shopping-cart" />
                         </span>
                         
                         Cart
@@ -58,11 +58,11 @@ cursor:pointer;
 margin:0.2rem 0.5rem 0.2rem 0;
 transition:all 0.35s ease-in-out;
 &:hover{
-    background: var(--mainBlack);
-    color: var(--mainWhite);
+    background: var(--snowWhite);
+    color: var(--mainBlack);
     border: 0.1rem solid var(--mainBlack);
-    border-color:var(--mainBlack);
-    border-radius:0.1rem;
+    border-color: transparent;
+    border-radius:0rem;
 }
 &:focus{
     outline:none;

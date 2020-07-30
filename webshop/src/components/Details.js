@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {ProductConsumer} from '../context'
 import {Link} from 'react-router-dom';
 import {Button} from './Button';
-import styled from'styled-components';
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
 dom.watch()
@@ -19,7 +18,7 @@ export default class Details extends Component {
                         <div className="container py-5">
                             {/* title */}
                             <div className="row">
-                                <div className="col-10 mx-auto text center text-slanted textMainBlack my-5">
+                                <div className="col-12 mx-auto  text-slanted textMainBlack my-5">
                                     <h1>
                                         {title}
                                     </h1>
@@ -35,15 +34,15 @@ export default class Details extends Component {
                                 {/* Product text*/}
                                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                     <h2> model : {title} </h2>
-                                    <h4 className="textTitle text-capitalize text-muted mt-3 mb-2">
+                                    <h5 className="textTitle text-capitalize text-muted mt-3 mb-1">
                                         made by: <span className="text-capitalize">{company}</span>
-                                    </h4>
+                                    </h5>
                                     <h4 className="textMainBlack"><strong>price : {price} <span>SEK </span></strong>
                                     </h4>
                                     <p className="text-capitalize.font-weight-bold.mt-3.mb-0">
                                         info about product:
                                     </p>
-                                    <p className="text-muted lead">{info}</p>
+                                    <p className="text-muted">{info}</p>
                                     {/*buttons*/}
                                     <div>
                                         <Link to='/products'>
@@ -57,7 +56,7 @@ export default class Details extends Component {
                                             value.addToCart(id);
                                             value.openModal(id);
                                         }}>
-                                            {inCart ? "inCart" : "add to cart"}
+                                            {inCart ? "in Cart" : "add to cart"}
 
                                         </Button>
 
@@ -73,23 +72,4 @@ export default class Details extends Component {
     }
 }
 
-const whiteButtonContainer = styled.button`
-text-transform:capitalize;
-font-size:1rem;
-background: transparent;
-border: 0.1rem solid var(--mainWhite);
-color: var(--mainBlack) !important;
-border-radius:0.1rem;
-padding:0.2rem 0.5rem;
-cursor:pointer;
-margin:0.2rem 0.5rem 0.2rem 0;
-transition:all 0.5s ease-in-out;
-&:hover{
-    background:var(--mainWhite);
-    color: var(--secDark) !important;
-}
-&:focus{
-    outline:none;
-}
 
-`;

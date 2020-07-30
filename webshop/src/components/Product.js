@@ -31,8 +31,8 @@ export default class Product extends Component {
                             value.openModal(id);
                         }}
                         >
-                        {inCart ? (<p className="text-capitalize mb-0" disabled>
-                            in Cart</p>):(<i className="fa fa-cart-plus"/>)}
+                        {inCart ? (<h6 className="text-capitalize mb-0" disabled><small> in cart </small>
+                            </h6>):(<i className="fa fa-cart-plus"/>)}
                             </button>
                     </div>)}
                    
@@ -102,17 +102,20 @@ img-container:hover .card-img-top{
     bottom:0;
     right:0;
     padding:0.2rem 0.4rem;
-    background:var(--mainWhite);
-    font-size:1.4rem;
-    border-radius: 0.5rem 0 0 0;
-    transform:translate(100%,100%);
-    transition: all 0.2s linear;
+    background:var(--appleBlue);
+    color: var(--snowWhite);
+    font-size:1.2rem;
+    border-color:transparent;
+    border-radius: 0.4rem 0 0 0;
+    transform:translate(0,0);
+    transition: all 0.15s linear;
 }
 .img-container:hover .cart-btn{
     transform: translate(0,0);
 }
 .cart-btn:hover {
-    color: var(--snowWhite);
+    color: var(--appleBlue);
+    background: transparent; 
     cursor: pointer;
 }
 `
