@@ -3,28 +3,38 @@ import {Link} from 'react-router-dom';
 import code from '../code.svg'
 import styled from 'styled-components';
 import { dom } from '@fortawesome/fontawesome-svg-core'
+import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 
 dom.watch()
 
 
 
-export default class Navbar extends Component {
+export default class myNavbar extends Component {
     render() {
         return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-               
-                <Link to='/'>
-                    <img src={code} style={{ height: 40, width:50}} alt="store" className="navbar-brand"/>
+            
+        <Navbar className="bgBlack navbar" role="navigation" expand="sm">
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link className="nav-link" href="/products"><span className="textSnow">Products</span></Nav.Link>
+                <Nav.Link className="nav-link" href="/"><span className="textSnow">Feed</span></Nav.Link>
+                <Nav.Link className="nav-link" href="/"><span className="textSnow">Socialmedia</span></Nav.Link>
+                <Nav.Link className="nav-link" href="/"><span className="textSnow">FAQ</span></Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+            <Navbar className="navbar justify-content-center" role="navigation" expand="sm">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <Link  to='/'>
+                            <img src={code} style={{ height: 40, width:50}} alt="store" className="nav navbar-nav"/>
 
-                </Link>
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link to ="/products" className="nav-link">
-                        Products
                         </Link>
-                    </li>
-                </ul>
-                <Link to='/cart' className="ml-auto ">
+                    </div>
+                </div>
+                
+            </Navbar>
+            <Link to='/cart' className="">
                     <Button>
                         <span className="mr-1">
                         <i className="fa fa-shopping-cart" />
@@ -33,20 +43,23 @@ export default class Navbar extends Component {
                         Cart
 
                     </Button>
-                </Link>
-            </NavWrapper>
+                    </Link>
+          </Navbar>
+            
         )
     }
 }
 
-const NavWrapper = styled.nav`
+{/*const NavWrapper = styled.nav`
 background: var(--mainDark);
 .nav-link{
     color:var(--snowWhite) !important;
     font-size:1rem;
     text-transform: Capitalize;
-}
-`
+} 
+`*/}
+
+
 const Button = styled.button`
 text-transform:capitalize;
 font-size:1rem;
@@ -58,6 +71,7 @@ cursor:pointer;
 margin:0.2rem 0.5rem 0.2rem 0;
 transition:all 0.35s ease-in-out;
 border-radius: 1rem;
+letter-spacing:0.05rem;
 &:hover{
     background: var(--snowWhite);
     color: var(--mainBlack);
@@ -69,5 +83,4 @@ border-radius: 1rem;
     outline:none;
 }
 `;
-
 

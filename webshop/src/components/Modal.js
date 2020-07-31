@@ -24,10 +24,10 @@ export default class Modal extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
-                                        <h5 className="text-muted">item added to cart</h5>
-                                        <img src={img} className="img-fluid" alt="product"/>
+                                        <h5 className="text-muted mb-2">item added to cart</h5>
+                                        <img src={img} className="img-fluid mb-3" alt="product"/>
                                         <h5>{title}</h5>
-                                        <h5 className="text-muted">price: {price} SEK
+                                        <h5 className="text-muted mb-3">price: {price} SEK
                                         </h5>
                                         <Link to ='/products'>
                                             <Button onClick={()=>closeModal()}>
@@ -39,7 +39,6 @@ export default class Modal extends Component {
                                                 go to cart
                                             </Button>
                                         </Link>
-                                        
                                         
 
 
@@ -69,10 +68,10 @@ right:0;
 bottom:0;
 background:rgba(0,0,0,0.3);
 display:flex;
-align-items: center;
-justify-content:center;
+align-items:center;
+justify-content: center;
 #modal{
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 1rem 1rem 1rem 1rem;
     padding: 3rem;
     background: var(--mainWhite);
 }

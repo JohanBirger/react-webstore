@@ -10,6 +10,7 @@ import Default from './components/Default';
 import Modal from './components/Modal';
 import { dom } from '@fortawesome/fontawesome-svg-core'
 import HomePage from './components/HomePage';
+import BottomBar from './components/BottomBar';
 
 dom.watch()
 
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/products" component={Productlist}/>
           <Route  component={Default} />
         </Switch> 
+        <BottomBar/>
         <Modal/>
       </React.Fragment>
     );

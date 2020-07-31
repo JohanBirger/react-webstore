@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import {ProductConsumer} from '../context'
 import PropTypes from 'prop-types'
 import { dom } from '@fortawesome/fontawesome-svg-core'
+import BottomBar from './BottomBar'
 
 dom.watch()
 
@@ -50,7 +51,9 @@ export default class Product extends Component {
 
                     </div>
                 </div>
+                
             </ProductWrapper>
+        
         )
     }
 }
@@ -106,7 +109,7 @@ img-container:hover .card-img-top{
     color: var(--snowWhite);
     font-size:1.2rem;
     border-color:transparent;
-    border-radius: 0.3rem 0rem 0 0.3rem;
+    border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
     transform:translate(0,0);
     transition: all 0.15s linear;
 }

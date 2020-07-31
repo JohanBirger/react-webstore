@@ -14,6 +14,7 @@ cursor:pointer;
 margin:0.2rem 0.5rem 0.2rem 0;
 transition:all 0.35s ease-in-out;
 border-radius:1rem;
+letter-spacing:0.05rem !important;
 &:hover{
     background:${props => props.cart ? "var(--appleBlue)":"var(--mainBlack)"};
     color: var(--mainWhite);

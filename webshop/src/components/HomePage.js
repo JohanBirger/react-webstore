@@ -15,13 +15,13 @@ export default class Productlist extends Component {
     };
     
     render() {
-        console.log("");
+        
         return (
             <React.Fragment>
                 <div className="bgBlack">
                     <div className=" container-fluid bgBlack">
-                        <div className="row bgBlack">
-                            <p className="textWhite"> bajs</p>
+                        <div className="row bgBlack no-gutters text-center">
+                            <h1 className="col-10 mx-auto my-2 text-center text-capitalize font-weight-bold textTitle textWhite"> <strong>Under Construction</strong></h1>
                             
 
                         </div>
@@ -34,7 +34,7 @@ export default class Productlist extends Component {
                                     </h1>
                           </div> */}
 
-                        <div className="row bgBlack">
+                        <div className="row bgBlack no-gutters">
                             <ProductConsumer>
                                 {value =>{
                                     return value.products.map(product=>{

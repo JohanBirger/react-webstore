@@ -3,6 +3,8 @@ import Product from './Product';
 import Title from './Title';
 import {ProductConsumer} from '../context';
 import { dom } from '@fortawesome/fontawesome-svg-core'
+import {BottomBar} from './BottomBar';
+
 
 dom.watch()
 
@@ -12,9 +14,9 @@ export default class Productlist extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="py-5">
+                <div className="py-5 bgWhite">
                     <div className="container">
-                        <Title name="our" title="products"/>
+                        <Title name="The" title="Selection"/>
 
                         <div className="row">
                             <ProductConsumer>

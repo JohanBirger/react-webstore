@@ -1,6 +1,6 @@
 :root{
   --Chartreuse:#7FFF00;
-  --mainDark:#232528;
+  --mainDark:#333333;
   --mainWhite:#f3f3f3;
   --mainBlack:#000000;
   --mainYellow:#ffa400;
@@ -9,30 +9,42 @@
   --spaceGrey: #4f5b66;
   --appleBlue:#0077ED;
   --mainRed:#DC3545;
-  
+  --backgroundWhite:#FFFFFF;
   
 }
 
 body{
-  font-family:'Fira Code', monospace !important;
-  background:var(--mainWhite) !important;
+  font-family:'Raleway', sans-serif !important;
+  letter-spacing:0.05rem;
+  background:var(--backgroundWhite) !important;
   color: var(--mainBlack) !important;
 
 }
 
+.fixBottom{
+  position:relative !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:0 !important;
+}
+
 .textTitle {
   
-  font-family:'Roboto Slab', monospace !important;
+  font-family:'PT Serif', serif !important;
   letter-spacing: 0.3rem;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .textSnow{
-  color: var(--snowWhite);
+  color: var(--snowWhite) !important;
 }
 
 .bgBlack{
   background: var(--mainDark);
+}
+
+.bgWhite{
+  background: var(--backgroundWhite);
 }
 
 .textWhite{
@@ -52,21 +64,48 @@ li {
 .btn-black{
   background:var(--mainBlack) !important;
   text-transform: capitalize;
-  font-size: 0.75rem !important;
+  font-size: 1rem !important;
   color: var(--snowWhite) !important;
+  transition:all 0.35s ease-in-out;
   border-radius: 1rem 1rem 1rem 1rem !important;
+  padding:0.2rem 0.5rem;
+  letter-spacing:0.05rem;
   
 }
+
 
 .btn-black:hover{
   background: transparent !important;
   color: var(--mainBlack) !important;
 }
 
+.btn-blue{
+  text-transform:capitalize;
+  font-size:1rem;
+  background: transparent;
+  border:transparent;
+  color:var(--appleBlue) !important;
+  padding:0.2rem 0.5rem;
+  cursor:pointer;
+  margin:0.2rem 0.5rem 0.2rem 0;
+  transition:all 0.35s ease-in-out;
+  border-radius: 1rem 1rem 1rem 1rem !important;
+  letter-spacing:0.05rem;
+}
+
+.btn-blue:hover{
+    background:var(--appleBlue);
+    color: var(--mainWhite) !important;
+}
+  
+
+
+
 .cart-icon{
   cursor: pointer;
   font-size: 1.4rem;
   color: var(--mainRed);
+  letter-spacing:0.05rem !important;
 }
 
 .navbar.center .navbar-inner {
@@ -76,4 +115,11 @@ li {
 .navbar.center .navbar-inner .nav {
   display:inline-block;
   float: none;
+}
+
+.finePrint {
+  font-family:'Raleway', sans-serif !important;
+  letter-spacing:0.05rem !important;
+  font-size: 1rem !important;
+  color: var(--snowWhite)
 }

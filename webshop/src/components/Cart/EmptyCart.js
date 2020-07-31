@@ -7,16 +7,17 @@ dom.watch()
 
 export default function EmptyCart() {
     return (
-        <div className="container mt-5">
+        <div className="container py-5 mt-5 mb-5">
             <div className="row">
-                <div className="col-12 mx-auto text-center textTitle">
+                <div className="col-12 mx-auto text-center textTitle mt-2 mb-2">
                     <h1>Your cart is currently empty</h1>
                     <Link to ='/products'>
-                    <Button>
-                        Head back to products
-                    </Button>
+                    <button className="btn-blue" type="button">
+                       back to products
+                    </button>
                     </Link>
                 </div>
+                <div className="container py-5"/>
             </div>
         </div>
     )
@@ -33,12 +34,13 @@ padding:0.2rem 0.5rem;
 cursor:pointer;
 margin:0.2rem 0.5rem 0.2rem 0;
 transition:all 0.35s ease-in-out;
+border-radius:1rem;
 &:hover{
     background:${props => props.cart ? "var(--mainYellow)":"var(--mainBlack)"};
     color: var(--mainWhite);
     border: 0.1rem solid var(--mainBlack);
     border-color:${props => props.cart ? "var(--mainYellow)":"var(--mainBlack)"};
-    border-radius:0.1rem;
+    border-radius:1rem;
 }
 &:focus{
     outline:none;
