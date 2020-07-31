@@ -80,12 +80,15 @@ export default class BottomBar extends Component {
                         
 
                   </div>
+
+                </div>
+
               </Nav>
             
              
                 
                   
-                </div>
+               
               
             </Navbar.Collapse>
           </Navbar>
