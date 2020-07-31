@@ -109,12 +109,14 @@ li {
 }
 
 .navbar.center .navbar-inner {
-  text-align: center;
+  text-align: center !important;
+  align-content: center !important;
 }
 
 .navbar.center .navbar-inner .nav {
-  display:inline-block;
-  float: none;
+  display:inline-block !important;
+  float: none !important;
+  align-content: center !important;
 }
 
 .finePrint {
@@ -123,3 +125,16 @@ li {
   font-size: 1rem !important;
   color: var(--snowWhite)
 }
+
+.finePrintBlack {
+  font-family:'Raleway', sans-serif !important;
+  letter-spacing:0.05rem !important;
+  font-size: 1rem !important;
+  color: var(--mainBlack)
+}
+
+#nav-dropdown{
+  color: var(--snowWhite) !important;
+
+}
+

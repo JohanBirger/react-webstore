@@ -61,16 +61,25 @@ export default class BottomBar extends Component {
                 <div className="text-right pr-5">
                       <img src={code} style={{ height:100, width:80}} alt="store"/>
                         <h6>
-                            <span className="finePrint"><strong><i className="fa fa-globe" /> Adress<br/> </strong>Hallojgatan 12 </span> 
+                            <span className="finePrint"><strong><h6>🌍 Adress</h6></strong>Hallojgatan 12 </span> 
                         </h6>
                         <h6>
-                            <span className="finePrint"><strong><i className="fa fa-phone" /> Nummer <br/></strong>070-1234567</span> 
+                            <span className="finePrint"><strong><h6>☎️ Number</h6></strong>070-1234567</span> 
                         </h6>
                         <h6>
-                            <span className="finePrint"><strong><i className="fa fa-envelope" /> Mail<br/> </strong>Koddstugan@gmail.com </span> 
+                            <span className="finePrint"><strong><h6>✉️ Mail</h6></strong>Koddstugan@gmail.com </span> 
                         </h6>
-                    
-                    
+
+                        <NavDropdown title="Attributes" id="nav-dropdown">
+                            
+                        <ul>
+                            <li>
+                                <a href="https://www.flaticon.com/authors/turkkub" title="turkkub"><span className="finePrintBlack">turkkub</span> </a>
+                            </li>
+                        </ul>
+                        </NavDropdown>
+                        
+
                   </div>
                 
                   
@@ -113,3 +122,4 @@ justify-content:center;
 }
 
 `;
+

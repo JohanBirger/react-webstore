@@ -23,9 +23,9 @@ export default class myNavbar extends Component {
                 <Link className="nav-link" to="/faq"><span className="textSnow">FAQ</span></Link>
               </Nav>
             </Navbar.Collapse>
-            <Navbar className="navbar justify-content-center" role="navigation" expand="sm">
+            <Navbar className="navbar-center navbar-inner nav" role="navigation" expand="sm">
                 <div class="row">
-                    <div class="col d-flex justify-content-center">
+                    <div class="navbar-center navbar-inner nav">
                         <Link  to='/'>
                             <img src={code} style={{ height: 40, width:50}} alt="store" className="nav navbar-nav"/>
 
@@ -36,11 +36,8 @@ export default class myNavbar extends Component {
             </Navbar>
             <Link to='/cart' className="">
                     <Button>
-                        <span className="mr-1">
-                        <i className="fa fa-shopping-cart" />
-                        </span>
+                        <h5 className="mt-1">🛒</h5>
                         
-                        Cart
 
                     </Button>
                     </Link>

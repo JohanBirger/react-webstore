@@ -33,7 +33,7 @@ export default class Product extends Component {
                         }}
                         >
                         {inCart ? (<h6 className="text-capitalize mb-0" disabled><small> in cart </small>
-                            </h6>):(<i className="fa fa-cart-plus"/>)}
+                            </h6>):(<h5 className="mt-1">🛒</h5>)}
                             </button>
                     </div>)}
                    
@@ -109,7 +109,7 @@ img-container:hover .card-img-top{
     color: var(--snowWhite);
     font-size:1.2rem;
     border-color:transparent;
-    border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
+    border-radius: 0.5rem 0.1rem 0.1rem 0.5rem;
     transform:translate(0,0);
     transition: all 0.15s linear;
 }
