@@ -54,10 +54,9 @@ export default class BottomBar extends Component {
                     <br/>
                     <br/>
                     <br/>
-                    </div>     
-              </Nav>
-            
-              <div className="row">
+                    </div>  
+
+   <div className="row">
                 <div className="text-right col-xs-12 col-12 pr-5">
                       <img src={code} style={{ height:100, width:80}} alt="store"/>
                         <h6>
@@ -81,6 +80,9 @@ export default class BottomBar extends Component {
                         
 
                   </div>
+              </Nav>
+            
+             
                 
                   
                 </div>
