@@ -17,10 +17,10 @@ export default class myNavbar extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link className="nav-link" href="/products"><span className="textSnow">Products</span></Nav.Link>
-                <Nav.Link className="nav-link" href="/"><span className="textSnow">Feed</span></Nav.Link>
-                <Nav.Link className="nav-link" href="/"><span className="textSnow">Socialmedia</span></Nav.Link>
-                <Nav.Link className="nav-link" href="/"><span className="textSnow">FAQ</span></Nav.Link>
+                <Link className="nav-link" to="/products"><span className="textSnow">Products</span></Link>
+                <Link className="nav-link" to="/"><span className="textSnow">Feed</span></Link>
+                <Link className="nav-link" to="/socialmedia"><span className="textSnow">Socialmedia</span></Link>
+                <Link className="nav-link" to="/faq"><span className="textSnow">FAQ</span></Link>
               </Nav>
             </Navbar.Collapse>
             <Navbar className="navbar justify-content-center" role="navigation" expand="sm">
