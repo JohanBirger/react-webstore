@@ -59,7 +59,7 @@ export default class BottomBar extends Component {
                 </div>
 
    <div className="row">
-                <div className="text-right col-xs-8 pr-5 ">
+                <div className="navbar-center navbar-inner nav">
                       <img src={code} style={{ height:100, width:80}} alt="store"/>
                         <h6>
                             <span className="finePrint"><strong><h6>🌍 Adress</h6></strong>Hallojgatan 12 </span> 
