@@ -54,7 +54,7 @@ export default class BottomBar extends Component {
                     <br/>
                     <br/>
                     <br/>
-                    </div>  
+                     
 
                 </div>
 
