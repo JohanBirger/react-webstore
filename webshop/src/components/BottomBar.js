@@ -11,7 +11,7 @@ import code from '../code.svg'
 export default class BottomBar extends Component {
     render() {
         return (
-            <Navbar className="bgBlack fixBottom">
+            <Navbar className="bgBlack fixBottom" expand=xs>
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -25,7 +25,7 @@ export default class BottomBar extends Component {
                 
               
                 </ul>
-                <div className="container">
+                <div className="container-fluid">
                   
                     <br/>
                     <br/>
@@ -59,7 +59,7 @@ export default class BottomBar extends Component {
                 </div>
 
    <div className="row">
-                <div className="text-right col-xs-12 col-12 pr-5">
+                <div className="text-right col-xs-12 col-12 pr-5 ">
                       <img src={code} style={{ height:100, width:80}} alt="store"/>
                         <h6>
                             <span className="finePrint"><strong><h6>🌍 Adress</h6></strong>Hallojgatan 12 </span> 
