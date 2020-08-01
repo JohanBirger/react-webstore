@@ -19,9 +19,9 @@ export default class Productlist extends Component {
         return (
             <React.Fragment>
                 <div className="bgBlack">
-                    <div className=" container-fluid bgBlack">
-                        <div className="row bgBlack no-gutters text-center">
-                            <h1 className="col-10 mx-auto my-2 text-center text-capitalize font-weight-bold textTitle textWhite"> <strong>Under Construction</strong>🔥</h1>
+                    <div className=" container bgBlack">
+                        <div className="row bgBlack text-center">
+                            <h1 className=" mx-auto my-2 text-center text-capitalize font-weight-bold homePageTitle textWhite">Maintenance🔥</h1>
                             
 
                         </div>
