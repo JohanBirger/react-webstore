@@ -11,7 +11,7 @@ import code from '../code.svg'
 export default class BottomBar extends Component {
     render() {
         return (
-            <Navbar className="bgBlack fixBottom" expand=xs>
+            <Navbar className="bgBlack fixBottom">
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -25,53 +25,23 @@ export default class BottomBar extends Component {
                 
               
                 </ul>
-                <div className="container-fluid">
-                  
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>                  
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                     
-
-                </div>
-
-   <div className="row">
-                <div className="navbar-center navbar-inner nav">
+              </Nav>
+              
+              <div className=" bgBlack text-right py-5 mt-5">
+                    <div className="mt-5 py-5">
                       <img src={code} style={{ height:100, width:80}} alt="store"/>
                         <h6>
-                            <span className="finePrint"><strong><h6>🌍 Adress</h6></strong>Hallojgatan 12 </span> 
+                            <span className="finePrint"><span role="img" aria-label="Earth Globe Europe-Africa">🌍</span><strong><h6>Adress</h6></strong>Hallojgatan 12 </span> 
                         </h6>
                         <h6>
-                            <span className="finePrint"><strong><h6>☎️ Number</h6></strong>070-1234567</span> 
+                            <span className="finePrint"><span role="img" aria-label="Black Telephone">☎️</span><strong><h6>Number</h6></strong>070-1234567</span> 
                         </h6>
                         <h6>
-                            <span className="finePrint"><strong><h6>✉️ Mail</h6></strong>Koddstugan@gmail.com </span> 
+                            <span className="finePrint"><span role="img" aria-label="Letter">✉️</span><strong><h6>Mail</h6></strong>Koddstugan@gmail.com </span> 
                         </h6>
+                        <br/>
 
-                        <NavDropdown title="Attributes" id="nav-dropdown">
+                        <NavDropdown className="text-right" title="Attributes" id="nav-dropdown">
                             
                         <ul>
                             <li>
@@ -79,12 +49,9 @@ export default class BottomBar extends Component {
                             </li>
                         </ul>
                         </NavDropdown>
-                        
+                        </div> 
 
                   </div>
-
-              </Nav>
-            
              
                 
                   

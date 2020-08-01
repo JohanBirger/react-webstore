@@ -36,7 +36,7 @@ export default class myNavbar extends Component {
             </Navbar>
             <Link to='/cart' className="">
                     <Button>
-                        <h5 className="mt-1">🛒</h5>
+                        <h5 className="mt-1"><i class="fa fa-shopping-cart" aria-hidden="true"></i> cart</h5>
                         
 
                     </Button>

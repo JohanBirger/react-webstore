@@ -33,7 +33,7 @@ export default class Product extends Component {
                         }}
                         >
                         {inCart ? (<h6 className="text-capitalize mb-0" disabled><small> in cart </small>
-                            </h6>):(<h5 className="mt-1">🛒</h5>)}
+                            </h6>):(<h5 className="mt-1"><i class="fa fa-shopping-cart" aria-hidden="true"></i></h5>)}
                             </button>
                     </div>)}
                    
