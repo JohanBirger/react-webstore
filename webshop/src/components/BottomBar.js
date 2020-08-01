@@ -27,8 +27,8 @@ export default class BottomBar extends Component {
                 </ul>
               </Nav>
               
-              <div className=" bgBlack text-right py-5 mt-5">
-                    <div className="mt-5 py-5">
+              <div className="bgBlack text-right py-5 mt-5 d-none d-sm-block">
+                    <div className="mt-5 py-5 mr-2">
                       <img src={code} style={{ height:100, width:80}} alt="store"/>
                         <h6>
                             <span className="finePrint"><span role="img" aria-label="Earth Globe Europe-Africa">🌍</span><strong><h6>Adress</h6></strong>Hallojgatan 12 </span> 
@@ -53,10 +53,6 @@ export default class BottomBar extends Component {
 
                   </div>
              
-                
-                  
-               
-              
             </Navbar.Collapse>
           </Navbar>
     )
